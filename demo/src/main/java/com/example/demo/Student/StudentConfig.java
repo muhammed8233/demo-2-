@@ -32,8 +32,14 @@ public class StudentConfig {
                     "HABIBA42@gmail.com"
 
             );
+
+            Student fauziyat = new Student(
+                    "fauziyat",
+                    LocalDate.of(2005, Month.OCTOBER, 6),
+                    "FauziyatAbdulsalam@gmail.com"
+            );
             repository.saveAll(
-                    List.of(Mariam, musa, habiba)
+                    List.of(Mariam, musa, habiba, fauziyat)
             );
         };
     }
